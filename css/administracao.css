@@ -1,0 +1,111 @@
+body{ 
+	font-family:Lucida Grande,Verdana,Geneva,Sans-serif;
+	font-size:12px;	background-color:#f3f3e9;
+}
+
+h2,h3,h4{
+	margin-top:5px;
+	margin-bottom:5px;
+}
+
+#menu-administracao{
+	float:left; width:200px;
+	display:inline-block; margin-right:15px;
+	padding:20px; background-color:#ddd;
+}
+
+#menu-administracao ul{ padding:0px; margin:0px; }
+
+#menu-administracao ul li{
+	list-style:none; padding-top:4px; 
+	padding-bottom:4px; border-bottom:#000 dotted 1px;
+}
+
+#menu-administracao ul li a, #menu-administracao a{ text-decoration:none; color:#000; }
+
+#form-cadastro{
+	width:545px; background-color:#e4ae0c; 
+	padding:20px; display:inline-block;
+}
+#form-cadastro form fieldset{
+	width:525px; border:none;
+	padding-top:15px;
+}
+#form-cadastro form legend{
+	font-size:16px;
+	margin-top:0px; margin-bottom:0px;
+}
+
+#form-cadastro form label{
+	width:100%; display:inline-block;
+}
+#form-cadastro form input,#form-cadastro textarea{
+	padding:4px; border:#ccc solid 2px;	width:100%; margin-top:5px;
+}
+
+#form-cadastro form select{
+	font-size:12px;
+	padding:4px; border:#ccc solid 2px;	width:102%; margin-top:5px;
+}
+#form-cadastro form input[type=file]{
+	font-size:12px;
+}
+
+#form-cadastro textarea{
+	height:50px;
+}
+#form-cadastro form input[type=submit],#form-cadastro form input[type=reset]{
+	width:100px;
+}
+
+#lista-categorias{
+	width:545px; background-color:#ddd; 
+	padding:20px; margin-top:20px; margin-left:255px;
+}
+
+#lista-categorias ul{
+	margin:0px;padding:0px;
+}
+
+#lista-categorias ul li{
+	border-bottom:#aaa dotted 1px; list-style:none;
+	width:100%;	padding-bottom:5px;
+}
+
+#lista-categorias ul li a{
+	text-decoration:none;color:#000;
+}
+
+#lista-produtos{
+	width:545px; background-color:#ddd;
+	height:150px; overflow-y:scroll; padding:20px; 
+	padding-top:3px; margin-top:14px; margin-left:255px;
+	border:#ccc inset 1px;
+}
+
+#lista-produtos a{
+	text-decoration:none;color:#000;
+}
+
+#form-login{
+	margin:auto; width:450px; background-color:#e4ae0c; 
+	padding:20px; margin-top:30px;
+}
+#form-login form fieldset{
+	width:420px; border:none; padding-top:15px;
+}
+#form-login form legend{
+	font-size:16px;	margin-top:0px; margin-bottom:0px;
+}
+
+#form-login form label{
+	width:100%; display:inline-block;
+}
+
+#form-login form input{
+	padding:5px; width:100%; display:inline-block;
+}
+
+#form-login form input[type=submit],#form-login form input[type=reset]{
+	padding:5px; margin-top:10px; width:auto; display:inline;
+}

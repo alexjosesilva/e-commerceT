@@ -1,0 +1,102 @@
+body{ 
+	font-family:Lucida Grande,Verdana,Geneva,Sans-serif;
+	font-size:12px;	background-color:#f3f3e9;
+}
+
+#menu-categorias{
+	float:left; width:200px;
+	display:inline-block; margin-right:15px;
+	padding:20px; background-color:#ddd;
+}
+
+#menu-categorias form input{
+	width:100px; padding:4px; border:#ccc solid 2px;
+}
+#menu-categorias form input[type=submit]{
+	width:80px; padding:3px;
+}
+
+#menu-categorias ul{ padding:0px; margin:0px; }
+
+#menu-categorias ul li{
+	list-style:none; padding-top:4px; 
+	padding-bottom:4px; border-bottom:#000 dotted 1px;
+}
+
+#menu-categorias ul li a, #menu-categorias a{ text-decoration:none; color:#000; }
+
+#produtos-home{	
+	width:545px; background-color:#e4ae0c; padding:20px; display:table;
+}
+
+.item-home{	
+	width:100px; display:table;	float:left;
+	margin:5px;	padding:5px; background-color:#fff;
+}
+
+.item-home h4{ text-transform:capitalize; height:30px; }
+.item-home img{	width:100px; border:#ccc solid 2px;	clear:both; }
+.item-home a{ text-decoration:none; color:orange; }
+
+#produtos-detalhe{
+	width:545px; background-color:#eee; display:table;
+	padding:20px; padding-top:5px;
+}
+
+#produtos-detalhe h3,#produtos-detalhe h4{
+	background-color:#ddd; width:95%; padding:15px;
+	border:#bbb dotted 1px; text-transform:uppercase;
+}
+
+#produtos-detalhe img{
+	width:450px; border:#ccc solid 2px;
+}
+
+#form-contato{
+	width:545px; background-color:#e4ae0c; 
+	padding:20px; display:inline-block;
+}
+#form-contato form fieldset{
+	width:525px; border:none;
+	padding-top:25px;
+}
+#form-contato form legend{
+	font-size:16px;
+}
+
+#form-contato form label{
+	width:100%; display:inline-block;
+}
+#form-contato form input,#form-contato textarea{
+	padding:4px; border:#ccc solid 2px;	width:100%;
+}
+#form-contato form input[type=submit],#form-contato form input[type=reset]{
+	width:100px;
+}
+
+#carrinho{
+	width:545px; background-color:#eee; display:table;
+	padding:20px; padding-top:5px;
+}
+
+#carrinho table{
+	width:545px; padding:10px;
+}
+#carrinho table tr th{
+	text-align:left;
+	color:#fff;	background-color:#666;
+	padding-bottom:5px; padding-top:5px;
+}
+#carrinho table tr td{
+	width:25%;
+	border-bottom:#000 dotted 1px;
+}
+
+.linkcart{
+	padding:15px;
+	background-color:#efefef;
+	display:inline-block;
+}
+.oculto{
+	display:none;
+}

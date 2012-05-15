@@ -1,0 +1,11 @@
+Estes arquivos correspondem a versão final do catálogo SEM AJAX.
+
+Os arquivos contidos neste pacote .rar foram desenvolvidos com propósitos de estudo. 
+Sem finalidade comercial, sob a licença (CC) Creative commons.
+Você tem a permissão de utilizar, alterar, redistribuir, etc, de acordo com os termos da licença. 
+O autor dos Codigos não fica obrigado a dar assistência tecnica e ou qualquer tipo de suporte aos mesmos.
+
+Se você decidir utilizar os mesmos para finalidades comerciais faça sob sua própria conta e risco.
+As imagens contidas no projeto podem estar sujeitas as leis de direitos autorais, não as utilize comercialmente. 
+Não as publique, não as redistribua.
+Para instalar o banco de dados, utilizar o Script database.sql contido no pacote.
