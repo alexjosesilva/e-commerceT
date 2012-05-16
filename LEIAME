@@ -1,15 +1,15 @@
-Projeto de Estudo Acad�mico que envolve
+Projeto de Estudo Acadêmico que envolve
 A linguagem de PHP e o Framework CodeIgniter 1.7.2
-e o controlador de Vers�o gitHub.
+e o controlador de Versão gitHub.
 
-O projeto � um exercicio de como criar e manter uma 
+O projeto é um exercicio de como criar e manter uma 
 loja virtual usando a linguagem php o framework 
-codeigniter e ao mesmo tempo controlar a vers�o 
+codeigniter e ao mesmo tempo controlar a versão 
 com o gitHub.
 
 Neste projeto de Loja Vitual podemos cadastrar produtos,
-adiconar descri��o com imagem. Podemos, tamb�m, adicionar
-usu�rios respeitando uma determinada hierarquia.
+adiconar descrição com imagem. Podemos, também, adicionar
+usuários respeitando uma determinada hierarquia.
 
+GNU License
 
-teste um
