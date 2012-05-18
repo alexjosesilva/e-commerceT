@@ -1,11 +1,11 @@
+<div id='menu-categorias'>
+
 <?php
-	
-echo "<div id='menu-categorias'>";
-	
+		
 	echo "<a href='".base_url()."'>Home</a>";	
 	echo br();
 	echo "<a href='".base_url()."contato'>Contato</a>";
-	echo br();
+	echo br(2);
 	
 	echo form_open(base_url().'produtos/busca');
 	echo form_input('busca');
@@ -20,6 +20,8 @@ echo "<div id='menu-categorias'>";
 	
 echo ul($lista);
 
-echo "</div>";
+
 
 ?>
+
+</div>
