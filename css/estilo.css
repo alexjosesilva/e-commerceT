@@ -1,17 +1,12 @@
-
-/*
- * Estilo do Sistema
- */
-
 body{
-	font-family:Lucida grande, Verdana, Geneva, Sans-serif;
+	font-family:Verdana, Geneva, Arial, Helvetica, sans-serif;
 	font-size: 12px;
 	background-color: #f3f3e9;
 }
 
 #menu-categorias{
 	float:left;
-	width: inline-block;
+	display:inline-block;
 	margin-right: 15px;
 	padding: 20px;
 	background-color: #ddd;
@@ -26,7 +21,7 @@ body{
 	border-bottom: #000 dotted 1px;
 }
 
-#menu-categorias ul li a{text-decoration: none; color:#000;}
+#menu-categorias ul li a, #menu-categorias a{text-decoration: none; color:#000;}
 
 #produtos-home{
 	width: 545px;
@@ -73,17 +68,56 @@ body{
 
 
 
-/************************************************
+/*
 * Altera��o em 11 de maio de 2012 
 * pagina 81
-*************************************************/
+*/
 #menu-categorias form input{
 	width: 100px;
 	padding: 4px;
-	boder:#ccc solid 2px;
+	border:#ccc solid 2px;
 }
 
 #menu-categorias form input[type=submit]{
 	width: 80px;
 	padding: 3px;
+}
+
+
+/*
+* Altera��o em 18 de maio de 2012 
+* pagina 87
+*/
+
+#form-contato{
+	width: 545px;
+	background-color: #E4AE0C;
+	padding: 20px;
+	display: inline-block;	
+}
+
+
+#form-contato form fieldset{
+	width: 525px;
+	border:none;
+	padding-top:25px;
+}
+
+#form-contato form legend{
+	font-size: 16px;
+}
+
+#form-contato form label{
+	width: 100%;
+	display: inline-block;
+}
+
+#form-contato form input, #form-contato textarea{
+	padding: 4px;
+	border:#ccc solid 2px;
+	width: 100%;
+}
+
+#form-contato form input[type=submit], #form-contato form input[type=reset]{
+	width: 100px;
 }

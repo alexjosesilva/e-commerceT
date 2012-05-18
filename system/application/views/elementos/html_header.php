@@ -10,20 +10,15 @@
 	<?php 
 		$meta = array(
 			array('name' => 'robots','content'=>'no-cache'),
-			array('name' => 'description','content'=>'Descrição'),
+			array('name' => 'description','content'=>'DescriÃ§Ã£o'),
 			array('name' => 'keywords','content'=>'frameworks'),
 			array('name' => 'robots','content'=>'no-cache'),
 			array('name' => 'Content-type','content'=>'text/html;charset=utf-8','type'=>'equiv')
 		);
 		echo meta($meta);
 		
-		$link = array(
-			'href'	=>	'css/estilo.css',
-			'rel'	=>	'stylesheet',
-			'type'	=>	'text/css',
-			'media'	=>	'print'
-		);
-		echo link_tag($link);
+		echo link_tag('css/estilo.css');
+
 	?>
 	
 </head>
