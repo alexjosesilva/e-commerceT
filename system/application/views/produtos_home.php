@@ -14,5 +14,5 @@ endforeach;
 
 echo "</div>";
 
-
+echo $paginas;
 ?>
