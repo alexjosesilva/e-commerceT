@@ -15,6 +15,7 @@
 			array('name' => 'robots','content'=>'no-cache'),
 			array('name' => 'Content-type','content'=>'text/html;charset=utf-8','type'=>'equiv')
 		);
+		
 		echo meta($meta);
 		
 		echo link_tag('css/estilo.css');

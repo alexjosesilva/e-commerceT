@@ -19,18 +19,18 @@ class Produto extends Controller{
 		
 		$this->load->view('elementos/html_header',$dados);
 		$this->load->view('elementos/produtos_categorias',$dados);
-		$this->load->view('produtos_detalhes',$dados);
+		$this->load->view('produto_detalhes',$dados);
 		$this->load->view('elementos/html_footer');
 		
 	}
 	
 	function categoria($id){
-		$query 				= $this->db->get('categorias');
+		$query 	= $this->db->get('categorias');
 		$dados['categorias']= $query->result();
 		$dados['titulo']	='Catalogo de produtos | Produtos da Categoria';
 		
 		$minha_query = "SELECT produtos.*, categorias.nome as nome_categoria FROM produtos JOIN categorias
-		ON produtos.categoria = categoria.id WHERE produtos.categoria = ".$id;
+		ON produtos.categoria = categorias.id WHERE produtos.categoria =".$id;
 		
 		$query 	= $this->db->query($minha_query);
 		$dados['produtos_categoria']= $query->result();

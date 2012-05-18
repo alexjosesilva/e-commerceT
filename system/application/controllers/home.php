@@ -9,7 +9,7 @@ class Home extends Controller {
 	
 	function index()
 	{
-		$dados['titulo'] = 'Catalogo de produtos | Home';
+		$dados['titulo'] = 'Catalogo de Produtos | Home';
 		$query = $this->db->get('categorias');
 		$dados['categorias'] = $query->result();
 		
