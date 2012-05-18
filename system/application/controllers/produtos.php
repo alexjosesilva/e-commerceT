@@ -19,7 +19,7 @@ class Produto extends Controller{
 		
 		$this->load->view('elementos/html_header',$dados);
 		$this->load->view('elementos/produtos_categorias',$dados);
-		$this->load->view('produto_detalhes',$dados);
+		$this->load->view('produtos_detalhes',$dados);
 		$this->load->view('elementos/html_footer');
 		
 	}
@@ -32,12 +32,12 @@ class Produto extends Controller{
 		$minha_query = "SELECT produtos.*, categorias.nome as nome_categoria FROM produtos JOIN categorias
 		ON produtos.categoria = categoria.id WHERE produtos.categoria = ".$id;
 		
-		$query 						= $this->db->query($minha_query);
+		$query 	= $this->db->query($minha_query);
 		$dados['produtos_categoria']= $query->result();
 		
 		$this->load->view('elementos/html_header',$dados);
 		$this->load->view('elementos/produtos_categorias',$dados);
-		$this->load->view('produto_detalhes',$dados);
+		$this->load->view('categoria_produtos',$dados);
 		$this->load->view('elementos/html_footer');
 	}
 	

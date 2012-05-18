@@ -1,7 +1,10 @@
-@CHARSET "ISO-8859-1";
+
+/*
+ * Estilo do Sistema
+ */
 
 body{
-	font-family:Lucida grande, Verdana, Geneva, Sans-serif;azimuth;
+	font-family:Lucida grande, Verdana, Geneva, Sans-serif;
 	font-size: 12px;
 	background-color: #f3f3e9;
 }
@@ -45,14 +48,39 @@ body{
 .item-home img{width:100px; border:#ccc solid 2px; clear: both;}
 .item-home a{ text-decoration: none; color:orange;}
 
+#produtos-detalhe{
+	width: 545px;
+	background-color: #eee;
+	display: table;
+	padding: 20px;
+	padding-top: 5px;
+}
+
+#produtos-detalhe h3, #produtos-detalheh4{
+	background-color: #ddd;
+	width: 95%;
+	padding: 15px;
+	border: #bbb dotted 1px;
+	text-transform: uppercase;
+}
+
+#produtos-detalhe img{
+	width: 450px;
+	border: #ccc solid 2px;
+}
+
+
+
+
+
 /************************************************
-* Alteração em 11 de maio de 2012 
+* Alteraï¿½ï¿½o em 11 de maio de 2012 
 * pagina 81
 *************************************************/
 #menu-categorias form input{
 	width: 100px;
 	padding: 4px;
-	boder:#cc solid 2px;
+	boder:#ccc solid 2px;
 }
 
 #menu-categorias form input[type=submit]{
