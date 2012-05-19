@@ -24,3 +24,30 @@ body{
 }
 
 #menu-administracao ul li a, #menu-administracao a{text-decoration: none; color:#000;}
+
+/*data 19.05.2012 */
+
+#form-cadastro form fieldset{
+	width: 525px;
+	border: none;
+	padding-top:25px;
+}
+
+#form-cadastro form legend{
+	font-size: 16px;
+}
+
+#form-cadastro form label{
+	width: 100%;
+	display: inline-block;
+}
+
+#form-cadastro form input, #form-cadastro textarea{
+	padding:4px;
+	boder:#ccc solid 2px;
+	width: 100%;
+}
+
+#form-cadastro form input[type=submit], #form-cadastro form input[type=reset]{
+	width: 100px;
+}

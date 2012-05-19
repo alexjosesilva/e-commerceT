@@ -19,6 +19,15 @@
             $this->load->view('administracao/categorias');
             $this->load->view('administracao/elementos/html_footer');
       }
+      
+      function adicionar(){
+          
+          $this->load->libray('form_validatiion');
+          
+          
+          
+      }
+      
            
   }
    
