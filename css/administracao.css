@@ -51,3 +51,30 @@ body{
 #form-cadastro form input[type=submit], #form-cadastro form input[type=reset]{
 	width: 100px;
 }
+
+/* Listar Categoria */
+#lista-categorias{
+	width: 545px;
+	background-color: #ddd;
+	padding: 20px;
+	margin-top: 20px;
+	margin-left: 255px;
+}
+
+
+#lista-categorias ul{
+	margin:0px;
+	padding:0px;
+}
+
+#lista-categorias ul li{
+	border-bottom: #aaa dotted 1px; 
+	list-style: none;
+	width: 100%;
+	padding-bottom: 5px;
+}
+
+#lista-categoria ul li a{
+	text-decoration: none;
+	color:#000;	
+}

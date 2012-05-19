@@ -3,6 +3,7 @@
 	<name>codeigniter</name>
 	<comment></comment>
 	<projects>
+		<project>codeigniter172</project>
 	</projects>
 	<buildSpec>
 	</buildSpec>
