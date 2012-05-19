@@ -1,1 +1,26 @@
 @CHARSET "ISO-8859-1";
+
+body{
+	font-family:Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	background-color: #f3f3e9;
+}
+
+#menu-administracao{
+	float:left;
+	display:inline-block;
+	margin-right: 15px;
+	padding: 20px;
+	background-color: #ddd;
+}
+
+#menu-administracao ul{ padding: 0px; margin: 0px;}
+
+#menu-administracao ul li{
+	list-style: none;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	border-bottom: #000 dotted 1px;
+}
+
+#menu-administracao ul li a, #menu-administracao a{text-decoration: none; color:#000;}

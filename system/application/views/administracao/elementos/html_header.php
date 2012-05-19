@@ -8,7 +8,8 @@
 	<title> <?php echo $titulo; ?> </title>
 	
 	<?php 
-		$meta = array(
+	   echo link_tag('css/administracao.css');
+	   $meta = array(
 			array('name' => 'robots','content'=>'no-cache'),
 			array('name' => 'description','content'=>'Descricao'),
 			array('name' => 'keywords','content'=>'frameworks'),
@@ -16,16 +17,13 @@
 			array('name' => 'Content-type','content'=>'text/html; charset=utf-8','type'=>'equiv')
 		);
 		
-		echo meta($meta);
-		
-		echo link_tag('css/administracao.css');
-
+	echo meta($meta);
 	?>
 	
 </head>
 
 <body>
 
-<h2> Bem Vindo a Área de Administração do Sistema </h2>
+<h2> Bem Vindo a Ã¡rea de AdministraÃ§Ã£o do Sistema </h2>
 
 
