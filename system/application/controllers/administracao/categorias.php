@@ -22,7 +22,7 @@
             $this->load->view('administracao/elementos/menu');
             $this->load->view('administracao/categorias',$data);
             $this->load->view('administracao/elementos/html_footer');
-      }
+      }//index
       
       function adicionar(){
           
@@ -64,9 +64,10 @@
               }
           }            
           
-      }
+      }//adicionar
       
-      function alterar(){
+      /* Alterar categoria: 9.4 pag 116 */
+      function alterar($id){
            $data['titulo'] = "Administracao | Alterar Categorias";
        
             $this->load->model('administracao/categorias_model');
@@ -77,12 +78,12 @@
             $this->load->view('administracao/elementos/menu');
             $this->load->view('administracao/alterar_categoria',$data);
             $this->load->view('administracao/elementos/html_footer');
-      }
+      }//alterar
            
-  }
+ 
    
   function gravar_alteracao(){
-       $this->load->libray('form_validation');
+       $this->load->library('form_validation');
           
           $config = array(
             array(
@@ -91,9 +92,9 @@
                 'rules' =>  'required|min_length[4]|max_length[20]'
             ),
             array(
-                'field' => 'descicao',
+                'field' => 'descricao',
                 'label' => 'Descricao',
-                'rules' =>  'required|min_length[20]|max_length[100]|htmlspecialchars' 
+                'rules' =>  'required|min_length[20]|max_length[200]|htmlspecialchars' 
            )    
           
           );
@@ -113,23 +114,24 @@
               $this->load->model('administracao/categorias_model');
               
               if($this->categorias_model->gravar_alteracao($data)){
-                  redirect(base_url().'administacao/categorias/','refresh');
+                  redirect(base_url().'administracao/categorias/','refresh');
               }
               else {
                   echo "Erro ao alterar categoria";
               }
           }
+       }//gravar alteracao
           
-         function excluir($id){
+       function excluir($id){
               $this->load->model('administracao/categorias_model');
                 if($this->categorias_model->excluir($data)){
-                     redirect(base_url().'administacao/categorias/','refresh');
+                     redirect(base_url().'administracao/categorias/','refresh');
                 }
                else {
                   echo "Erro ao excluir categoria";
               }   
-         }            
+       }//excluir            
           
-      }          
+ }          
   
 ?>

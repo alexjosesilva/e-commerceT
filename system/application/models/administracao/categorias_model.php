@@ -34,7 +34,7 @@
         
         
         public function gravar_alteracao($data){
-            $this->db->where('id',$data[$id]);
+            $this->db->where('id',$data['id']);
             return $this->db->update('categorias',$data);
         }
         

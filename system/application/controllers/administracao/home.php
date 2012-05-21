@@ -1,4 +1,4 @@
-zz<?php
+<?php
 /*
  * Controlador da area de administração do site
  */
