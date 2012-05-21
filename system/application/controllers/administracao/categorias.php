@@ -70,12 +70,12 @@
            $data['titulo'] = "Administracao | Alterar Categorias";
        
             $this->load->model('administracao/categorias_model');
-            $data['dados_categorias'] = $this->categorias_model->alterar($id);
+            $data['dados_categoria'] = $this->categorias_model->alterar($id);
        
             
             $this->load->view('administracao/elementos/html_header',$data);
             $this->load->view('administracao/elementos/menu');
-            $this->load->view('administracao/alterar_categorias',$data);
+            $this->load->view('administracao/alterar_categoria',$data);
             $this->load->view('administracao/elementos/html_footer');
       }
            
