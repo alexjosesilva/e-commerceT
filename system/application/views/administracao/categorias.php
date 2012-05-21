@@ -1,10 +1,9 @@
 <div id="form-cadastro">
 
-
 <?php
    
    echo validation_errors();
-   echo form_open(base_url()."administracacao/categorias/adicionar");
+   echo form_open(base_url()."administracao/categorias/adicionar");
    
    echo form_fieldset("Adicionar Categoria");
    
@@ -39,3 +38,4 @@
    echo ul($ul);
 ?>   
 </div>
+

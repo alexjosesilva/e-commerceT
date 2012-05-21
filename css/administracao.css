@@ -78,3 +78,19 @@ body{
 	text-decoration: none;
 	color:#000;	
 }
+
+/* view produtos livro pagina 121 */
+
+#form-cadastro form select{
+	font-size:12px;
+	padding: 4px;
+	border:#ccc solid 2px;
+	width: 102%;
+	margin-top:5px;
+}
+
+#form-cadastro form input[type=file]{
+	font-size:12px;
+}
+
+

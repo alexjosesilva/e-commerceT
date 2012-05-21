@@ -5,6 +5,7 @@ class Produto extends Controller{
 	
 	function __construct(){
 		parent::Controller();
+     
 	}
 	
 	function detalhe($id){

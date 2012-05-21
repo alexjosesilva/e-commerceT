@@ -13,7 +13,7 @@
         
         
         public function cadastrar($data){
-            return $this->db->insert('categorias','data'); 
+            return $this->db->insert('categorias',$data); 
             
         }
         

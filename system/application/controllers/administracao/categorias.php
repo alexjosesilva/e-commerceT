@@ -26,7 +26,7 @@
       
       function adicionar(){
           
-          $this->load->libray('form_validation');
+          $this->load->library('form_validation');
           
           $config = array(
             array(
@@ -35,9 +35,9 @@
                 'rules' =>  'required|min_length[4]|max_length[20]'
             ),
             array(
-                'field' => 'descicao',
-                'label' => 'Descricao',
-                'rules' =>  'required|min_length[20]|max_length[100]|htmlspecialchars' 
+                'field' => 'descricao',
+                'label' => 'Descrição',
+                'rules' =>  'required|min_length[10]|max_length[200]|htmlspecialchars' 
            )    
           
           );
@@ -51,11 +51,12 @@
           else{
               $data['nome'] = $this->input->post('nome');
               $data['descricao'] = $this->input->post('descricao');
-              $data['permissao'] = $this->input->post('permissao');
-              
+                          
               $this->load->model('administracao/categorias_model');
               
               if($this->categorias_model->cadastrar($data)){
+                 
+                  echo "Sucesso ao inserir categoria";
                   $this->index();
               }
               else {
@@ -65,7 +66,7 @@
           
       }
       
-      function aleterar(){
+      function alterar(){
            $data['titulo'] = "Administracao | Alterar Categorias";
        
             $this->load->model('administracao/categorias_model');

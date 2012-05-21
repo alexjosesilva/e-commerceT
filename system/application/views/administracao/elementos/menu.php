@@ -2,7 +2,7 @@
   
   echo "<div id='menu-administracao' >";
   
-    echo "<a href='".base_url()."'>Home</a>";        
+    echo "<a href='".base_url()."administracao'>Home</a>";        
     echo br();
     
     echo heading('Administração',3);

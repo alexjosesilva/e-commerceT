@@ -6,8 +6,10 @@ echo "<div id='menu-categorias'>";
 	echo "<a href='".base_url()."'>Home</a>";	
 	echo br();
 	echo "<a href='".base_url()."contato'>Contato</a>";
-	echo br(2);
-	
+	echo br();
+	echo "<a href='".base_url()."administracao'>Administração</a>";
+    echo br(2);
+    
 	echo form_open(base_url()."produtos/busca");
 	echo form_input('busca');
 	echo form_submit('mysubmit','Buscar');

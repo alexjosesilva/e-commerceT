@@ -13,7 +13,7 @@
    
    
    echo validation_errors();
-   echo form_open(base_url()."administracacao/categorias/gravar_alteracao");
+   echo form_open(base_url()."administracao/categorias/gravar_alteracao");
    
    echo form_fieldset("Alterar Categoria");
    
