@@ -32,16 +32,18 @@
 |
 | The $active_record variables lets you determine whether or not to load
 | the active record class
+| Acrescentar $db['default']['port'] = "numero porta" quando usar PostGres
 */
 
 $active_group = "default";
 $active_record = TRUE;
 
 $db['default']['hostname'] = "localhost";
-$db['default']['username'] = "root";
-$db['default']['password'] = "";
+$db['default']['port'] = "5433";
+$db['default']['username'] = "postgres";
+$db['default']['password'] = "123456";
 $db['default']['database'] = "catalogo";
-$db['default']['dbdriver'] = "mysql";
+$db['default']['dbdriver'] = "postgre";
 $db['default']['dbprefix'] = "";
 $db['default']['pconnect'] = TRUE;
 $db['default']['db_debug'] = TRUE; /* exibir erros de banco */

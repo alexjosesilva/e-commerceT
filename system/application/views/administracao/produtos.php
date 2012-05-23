@@ -40,5 +40,19 @@
     
 ?>
 
+</div>
 
+<div id='lista-produtos'>
+<?php
+foreach($produtos as $produto):
+
+    $link  = anchor("./administracao/produtos/excluir/".$produto->id, "[X]","onclick=\"return confirm('Confirma a exclsao desta categoria?')\"");
+    $link .= " - ";
+    $link .= anchor("./administracao/produtos/alterar/".$produto->id, $produto->nome);
+    $ul[]  = $link;
+
+endforeach;
+
+echo ul($ul);
+?>
 </div>

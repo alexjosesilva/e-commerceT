@@ -79,7 +79,7 @@ body{
 	color:#000;	
 }
 
-/* view produtos livro pagina 121 */
+/* view produtos cap 9 pagina 121 */
 
 #form-cadastro form select{
 	font-size:12px;
@@ -93,4 +93,21 @@ body{
 	font-size:12px;
 }
 
+/*Listar produtos cap 9 pag 127 */
+#lista-produtos{
+	width: 545px;
+	background-color: #ddd;
+	height:150px;
+	overflow-y:scroll;
+	padding: 20px;
+	padding-top: 3px;
+	margin-top: 14px;
+	margin-left: 255px;
+	border: #ccc inset 1px;
+}
+	
+#lista-produtos a{
+	text-decoration: none;
+	color:#000;
+}
 
