@@ -14,11 +14,11 @@
     
     
    echo validation_errors();
-   echo form_open(base_url().'administracao/produtos/gravar_alteracao');
+   echo form_open_multipart(base_url().'administracao/produtos/gravar_alteracao');
    
-   echo form_fieldset("Adicionar Produto");
+   echo form_fieldset("Alterar Produto");
    
-   echo form_hidden('id',$dados_produtos[0]->id);
+   echo form_hidden('id',$dados_produto[0]->id);
    
    echo form_label('Categroria','categoria');
    
@@ -31,14 +31,14 @@
    echo form_dropdown('categoria',$drop,$selecionado);
    
    echo form_label('Nome do produto','nome');
-   echo form_input('nome',$dados_produtos[0]->nome);
+   echo form_input('nome',$dados_produto[0]->nome);
    
-   echo form_label('Foto do produto','userfile');
+   echo form_label('Foto do produto1','userfile');
    echo form_upload('userfile','BUSCAR');
    
-   echo form_label('Proço do produto','preco');
-   echo form_input('preco',$dados_produtos[0]->preco);
-   //echo form_input('preco',decimal_to_reaisbr($dados_produtos[0]->preco));
+   echo form_label('Preço do produto','preco');
+   echo form_input('preco',$dados_produto[0]->preco);
+   //echo form_input('preco',decimal_to_reaisbr($dados_produto[0]->preco));
    
       
    echo form_label("Descrição da Produto",'descricao');

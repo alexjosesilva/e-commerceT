@@ -19,7 +19,7 @@
         echo form_label('Nome do produto','nome');
         echo form_input('nome',set_value('nome'));
         
-        echo form_label('Foto do produto','userfile');
+        echo form_label('Foto do produto2','userfile');
         echo form_upload('userfile');
                 
         echo form_label('Preço do produto','preco');
@@ -46,13 +46,12 @@
 <?php
 foreach($produtos as $produto):
 
-    $link  = anchor("./administracao/produtos/excluir/".$produto->id, "[X]","onclick=\"return confirm('Confirma a exclsao desta categoria?')\"");
-    $link .= " - ";
-    $link .= anchor("./administracao/produtos/alterar/".$produto->id, $produto->nome);
-    $ul[]  = $link;
-
+    echo anchor("./administracao/produtos/excluir/".$produto->id, "[X]","onclick=\"return confirm('Confirma a exclsao desta categoria?')\"");
+    echo " - ";
+    echo anchor("./administracao/produtos/alterar/".$produto->id, $produto->nome);
+    echo br('1');
+   
 endforeach;
 
-echo ul($ul);
 ?>
 </div>

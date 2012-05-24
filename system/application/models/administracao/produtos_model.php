@@ -11,7 +11,11 @@
            parent::Model();           
        }
        
-       //cadastrar produtos
+       /* cadastrar produtos
+        * cap 9 Pag 122
+        * Não valida a gravação de produtos existente
+        * ou seja po sistema ainda não proibe cadastrar o mesmo produto duas vezes!
+        */
        function cadastrar($data){
            return $this->db->insert('produtos',$data);
        }
@@ -28,6 +32,19 @@
            return $query->result();
        }
        
+       function excluir($id){
+           $this->db->where('id',$id);
+           return $this->db->delete('produtos');
+       }
+       
+      
+        /* Código funcionando perfeitamente
+         * 24.05.2012
+         */
+       function gravar_alteracao($data){
+        $this->db->where('id',$data['id']);
+        return $this->db->update('produtos',$data);
+    }
        
    }
    

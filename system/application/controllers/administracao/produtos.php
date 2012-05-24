@@ -14,20 +14,21 @@ class Produtos extends Controller {
     
     function index(){
         $data['titulo']="Administração | Produtos";
-        
         $this->load->model('administracao/categorias_model');
+
         $data['categorias'] = $this->categorias_model->listar();
-        
         $data['produtos']=$this->listar();       
         
         $this->load->view('administracao/elementos/html_header',$data);
-        $this->load->view('administracao/home');
         $this->load->view('administracao/elementos/menu');
         $this->load->view('administracao/produtos',$data);
         $this->load->view('administracao/elementos/html_footer');
     }
     
-    
+    /**
+     * Metodo Cadastra produto
+     * cap 9 pag 122
+     */
     function cadastrar(){
 
         
@@ -41,9 +42,9 @@ class Produtos extends Controller {
         );
         
         
-        $this->form_validatin->set_rules($validacoes);
+        $this->form_validation->set_rules($validacoes);
         
-        if($this->form_validatin->run()==FALSE){
+        if($this->form_validation->run()==FALSE){
             $this->index();
         }
         else{
@@ -112,7 +113,7 @@ class Produtos extends Controller {
         
         $this->load->view('administracao/elementos/html_header',$data);
         $this->load->view('administracao/elementos/menu');
-        $this->load->view('administracao/produtos',$data);
+        $this->load->view('administracao/alterar_produto',$data);
         $this->load->view('administracao/elementos/html_footer');
     }
     
@@ -127,8 +128,14 @@ class Produtos extends Controller {
         return $this->produtos_model->listar_dados_produto($id);
     }
     
-    function gravar_alteração(){
-        if($_FILES['userfile']['size']>0){
+    /*
+     * Metodo para gravar alteracao
+     * Cap 9 Pag 131 
+     */
+    function gravar_alteracao(){
+        
+        /* verificar carregamento de dados:se há ou não uma imagem a ser carregado! */
+        if($_FILES['userfile']['size'] > 0){   
             $config['upload_path'] = 'imgs';
             $config['allowed_types'] = 'gif|jpg|png';
             $config['max_size'] = 0;
@@ -146,9 +153,70 @@ class Produtos extends Controller {
             }
             
         }
-    }
-    
         
+        $this->load->library('form_validation');
+        
+        $validacoes = array(
+            array('field'=>'categoria','label'=>'Categoria','rules'=>'required|min_length[1]'),
+            array('field'=>'nome','label'=>'Nome','rules'=>'required|min_length[5]'),
+            array('field'=>'preco','label'=>'Preco','rules'=>'required|min_length[4]'),
+            array('field'=>'descricao','label'=>'Descricao','rules'=>'required|min_length[15]')
+        );
+        
+        
+        $this->form_validation->set_rules($validacoes);
+        
+        if($this->form_validation->run()==FALSE){
+            $this->alterar($this->input->post('id'));
+        }
+        else{
+            $data['id']=$this->input->post('id');
+            $data['categoria']=$this->input->post('categoria');
+            $data['nome']=$this->input->post('nome');
+            $data['preco']=$this->input->post('preco');
+            //$data['preco']= reaisbr_to_decimal($this->input->post('preco'));
+            $data['descricao']=$this->input->post('descricao');
+            
+            $this->load->model('administracao/produtos_model');
+            
+          if($this->produtos_model->gravar_alteracao($data)){
+                echo "Sucesso ao alterar produtos";    
+                $this->index();
+            }
+            else{
+                echo "Erro ao alterar produtos";
+            }
+            
+        }
+        
+        
+    }//gravar alteracao
+    
+    /*
+     * Metodo de Excluir
+     * Cap 9 Pag 133
+     */
+    
+    function excluir($id){
+        $foto_excluir = $this->dados_produto($id);
+        
+        if(unlink('imgs/'.$foto_excluir[0]->foto)){
+            $this->load->model('administracao/produtos_model');
+            
+            if($this->produtos_model->excluir($id)){
+                $this->index();
+            }
+            else{
+                echo "Erro ao excluir produto";
+            }
+        }else{
+            echo "Erro a excluir imagem de produto";
+        } 
+       
+    }//excluir
+    
+    
+            
 }
     
     
