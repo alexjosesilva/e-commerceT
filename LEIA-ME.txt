@@ -1,3 +1,4 @@
+***********************************************************************
 Projeto de Estudo Acadêmico que envolve
 A linguagem de PHP e o Framework CodeIgniter 1.7.2
 e o controlador de Versão gitHub.
@@ -25,4 +26,4 @@ Se voc� decidir utilizar os mesmos para finalidades comerciais fa�a sob sua 
 As imagens contidas no projeto podem estar sujeitas as leis de direitos autorais, n�o as utilize comercialmente. 
 N�o as publique, n�o as redistribua.
 Para instalar o banco de dados, utilizar o Script database.sql contido no pacote.
-
+***********************************************************************
