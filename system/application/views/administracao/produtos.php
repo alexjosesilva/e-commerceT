@@ -26,9 +26,6 @@
         echo form_input('preco',set_value('preco'));
         
         echo form_label('Descricao do produto','descricao');
-        echo form_input('descricao',set_value('descricao'));
-        
-        echo form_label('Descricao do produto','descricao');
         echo form_textarea('descricao',set_value('descricao'));
         
         echo form_submit('mysubmit','Adicionar');

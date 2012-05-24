@@ -1,17 +1,26 @@
 <?php
 
-echo "<div id='produtos-home'>";
+/*
+ * View detalhe do produto: aqui estão os detalhes dos produtos
+ * Cap 5
+ * Pag 72 e 73
+*/
+ 
+echo "<div id='produtos-detalhe'>";
 
-echo heading($produtos_categori[0]->nome_categoria,3);
-
-foreach ($produtos_categoria[0] as $item):
-	echo "<span class='item-home'>";
-		echo heading($item->nome,4);
-		echo img('imgs/'.$item->foto);
-		echo "<a href='".base_url()."produtos/detalhe/".$item->id."'>Ver Detalhes </a>";
-		echo "</span>";
+foreach($detalhes_produto as $detalhe):
+   
+   echo heading($detalhe->nome, 3); 
+   echo "<p>" . $detalhe->descricao . "</p>"; 
+   echo img("imgs/".$detalhe->foto);
+   //echo heading("R$".decimal_to_reaisbr($detalhe->preco), 4);
+   echo heading("R$".($detalhe->preco), 4);
+     
 endforeach;
 
 echo "</div>";
+
+
+
 
 ?>

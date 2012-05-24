@@ -1,6 +1,12 @@
 
 
 <?php
+
+/* View do Produtos Categorias
+ *  Cap5 
+ *  Pag 69 editado na pag 81
+ */
+
 echo "<div id='menu-categorias'>"; 
 		
 	echo "<a href='".base_url()."'>Home</a>";	
@@ -12,7 +18,7 @@ echo "<div id='menu-categorias'>";
     
 	echo form_open(base_url()."produtos/busca");
 	echo form_input('busca');
-	echo form_submit('mysubmit','Buscar');
+	echo form_submit('mysubmit','Buscar!');
 	echo form_close();
 
 	echo heading('Categorias',3);

@@ -1,33 +1,47 @@
 <?php
 
-class Produto extends Controller{
+class Produtos extends Controller{
 	
 	
 	function __construct(){
 		parent::Controller();
      
 	}
-	
+	/*
+     * Função para mostrar os detalhes dos produtos
+     * Cap 5
+     * pag 72
+     */
+     
+        
+         
 	function detalhe($id){
-		$query = $this->db->get('categorias');
-		$dados['categorias'] = $query->result();
-		
-		$dados['titulo'] = 'Catalogo de Produtos | Detalhes do Produto';
-		
-		$this->db->where('id',$id);
-		$query = $this->db->get('produtos');
-		$dados['detalhes_produto']=$query->result();
-		
-		$this->load->view('elementos/html_header',$dados);
-		$this->load->view('elementos/produtos_categorias',$dados);
-		$this->load->view('produto_detalhes',$dados);
-		$this->load->view('elementos/html_footer');
+	 
+        	
+		$query = $this->db->get('categorias'); 
+        $dados['categorias'] = $query->result();  
+        
+        $dados['titulo'] = 'Cat&aacute;logo de produtos | Detalhes do Produto';
+        
+        $this->db->where('id', $id);
+        $query = $this->db->get('produtos'); 
+        $dados['detalhes_produto'] = $query->result();  
+        
+        $this->load->view('elementos/html_header',$dados);
+        $this->load->view('elementos/produtos_categorias',$dados);
+        $this->load->view('produto_detalhes',$dados);
+        $this->load->view('elementos/html_footer');
 		
 	}
-	
+	/*
+     * Cap 5
+     * Pag 74 e 75
+    */
 	function categoria($id){
+	    
 		$query 	= $this->db->get('categorias');
 		$dados['categorias']= $query->result();
+          
 		$dados['titulo']	='Catalogo de produtos | Produtos da Categoria';
 		
 		$minha_query = "SELECT produtos.*, categorias.nome as nome_categoria FROM produtos JOIN categorias
@@ -44,24 +58,29 @@ class Produto extends Controller{
 	
 	function busca(){
 		$dados['titulo'] = 'Resultados da Busca';
-		$query = $this->db->get('produtos');
+		$query = $this->db->get('categorias');
 		$dados['categorias'] = $query->result();
 		
+        /*
+         * Atenção com like no postgres Erro
+         * Message: Undefined property: CI_DB_postgre_driver::$_like_escape_char
+         * Filename: database/DB_active_rec.php
+         */
+         
 		$this->db->like('nome',$this->input->post('busca'));
 		$this->db->or_like('descricao', $this->input->post('busca') );
-		$this->db->or_like('preco', $this->input->post('preco'));
 		
-		$query=$this->db->get('produtos');
+        $query=$this->db->get('produtos');
 		$dados['produtos'] = $query->result();
 		
 		$this->load->view('elementos/html_header',$dados);
 		$this->load->view('elementos/produtos_categorias',$dados);
 		
-		if(cout($dados['produtos'])>0){
+		if(count($dados['produtos'])>0){
 			$this->load->view('produtos_home',$dados);
 		}
 		else{
-			$dados['temp']=$this->input->post('busca');
+			$dados['termo']=$this->input->post('busca');
 			$this->load->view('nao_encontrado',$dados);
 		}
 		$this->load->view('elementos/html_footer');	

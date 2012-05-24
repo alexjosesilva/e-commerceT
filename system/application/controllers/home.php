@@ -1,5 +1,8 @@
 <?php
-
+/**
+ * Cap 5
+ * Pag 68
+ */
 class Home extends Controller {
 
 	function __construct()
