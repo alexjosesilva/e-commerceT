@@ -56,6 +56,10 @@ class Produtos extends Controller{
 		$this->load->view('elementos/html_footer');
 	}
 	
+    /**
+     * Cap 5
+     * Pag 82
+     */
 	function busca(){
 		$dados['titulo'] = 'Resultados da Busca';
 		$query = $this->db->get('categorias');
