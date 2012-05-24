@@ -8,6 +8,11 @@
       
      function __construct() {
             parent::Controller();
+            
+            $this->load->library('session');
+            if(!$this->session->userdata('loggedin')){
+            	redirect(base_url().'administracao/home','refresh');
+            }
       }
            
      function index(){

@@ -45,7 +45,7 @@
    echo form_textarea('descricao',$dados_produto[0]->descricao);
    
    echo form_submit('mysubmit','Alterar');
-   echo form_submit('mysubmit','Cancelar');
+   echo form_reset('myreset','CANCELAR');
    
    echo form_fieldset_close();
    echo form_close();  

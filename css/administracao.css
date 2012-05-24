@@ -44,7 +44,7 @@ body{
 
 #form-cadastro form input, #form-cadastro textarea{
 	padding:4px;
-	boder:#ccc solid 2px;
+	border:#ccc solid 2px;
 	width: 100%;
 }
 
@@ -111,3 +111,42 @@ body{
 	color:#000;
 }
 
+/* Tela de Login Cap.10 Pag 136 */
+
+#form-login {
+	margin: auto;
+	width: 450px;
+	background-color: #e4ae0c;
+	padding: 20px;
+	margin-top: 30px;
+}
+	
+#form-login form fieldset{
+	width: 420px;
+	border:none;
+	padding-top:15px;	
+}
+
+#form-login form legend{
+	font-size: 16px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+	
+#form-login form label{
+	width: 100%;
+	display: inline-block;
+}
+	
+#form-login form input{
+	padding: 5px;
+	width: 100%;
+	display: inline-block;
+}
+
+#form-login form input[type=submit], #form-login form input[type=reset]{
+	padding: 5px;
+	margin-top: 10px;
+	width: auto;
+	display: inline;	
+}

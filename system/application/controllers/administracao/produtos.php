@@ -10,6 +10,11 @@ class Produtos extends Controller {
         parent::Controller();
         //$this->load->helper('conversor_de_formatos');
         
+    	$this->load->library('session');
+        if(!$this->session->userdata('loggedin')){
+           redirect(base_url().'administracao/home','refresh');
+        }
+        
     }
     
     function index(){
@@ -136,7 +141,8 @@ class Produtos extends Controller {
         
         /* verificar carregamento de dados:se há ou não uma imagem a ser carregado! */
         if($_FILES['userfile']['size'] > 0){   
-            $config['upload_path'] = 'imgs';
+
+        	$config['upload_path'] = 'imgs';
             $config['allowed_types'] = 'gif|jpg|png';
             $config['max_size'] = 0;
             $config['max_width'] = 0;
@@ -145,11 +151,17 @@ class Produtos extends Controller {
             
             $this->load->library('upload',$config);
             
+            /* **********************************************
+             * Emite erro quando alterar um produto sem foto  
+		     *************************************************  */
             if($this->upload->do_upload()){
                 $foto_antiga = $this->dados_produto($this->input->post('id'));
-                unlink('./imgs/'.$foto_antiga[0]->foto);
-                $arquivo_enviado = $this->upload->data();
-                $data['foto']=$arquivo_enviado['file_name'];
+				
+                if($foto_antiga!=null){	
+                	unlink('./imgs/'.$foto_antiga[0]->foto);
+                	$arquivo_enviado = $this->upload->data();
+                	$data['foto']=$arquivo_enviado['file_name'];
+				}
             }
             
         }

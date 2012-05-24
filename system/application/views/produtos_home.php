@@ -27,5 +27,6 @@ endforeach;
 echo "</div>";
 
 // Paginação do sistema
+if($paginas!=NULL)
  echo $paginas;
 ?>

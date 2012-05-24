@@ -32,6 +32,7 @@ class Home extends Controller {
 		$this->pagination->initialize($config);
 		$dados['paginas']=$this->pagination->create_links();
 		
+		
 		$this->load->view('elementos/html_header',$dados);
 		$this->load->view('elementos/produtos_categorias',$dados);
 		$this->load->view('produtos_home',$dados);

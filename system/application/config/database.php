@@ -39,9 +39,9 @@ $active_group = "default";
 $active_record = TRUE;
 
 $db['default']['hostname'] = "localhost";
-$db['default']['port'] = "5433";
+$db['default']['port'] = "5432";
 $db['default']['username'] = "postgres";
-$db['default']['password'] = "123456";
+$db['default']['password'] = "pernambuco";
 $db['default']['database'] = "catalogo";
 $db['default']['dbdriver'] = "postgre";
 $db['default']['dbprefix'] = "";

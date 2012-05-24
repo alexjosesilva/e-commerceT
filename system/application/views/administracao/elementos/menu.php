@@ -10,7 +10,7 @@
     $lista[]="<a href='".base_url()."administracao/categorias'>Gerenciar Categorias</a>";
     $lista[]="<a href='".base_url()."administracao/produtos'>Gerenciar Produtos</a>";
     $lista[]="<a href='".base_url()."administracao/usuarios'>Gerenciar Usuarios</a>";
-    $lista[]="<a href='".base_url()."administracao/logout'>Sair</a>";
+    $lista[]="<a href='".base_url()."administracao/home/logout'>Sair</a>";
     
     echo ul($lista);    
   

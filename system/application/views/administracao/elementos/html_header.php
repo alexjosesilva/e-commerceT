@@ -24,6 +24,6 @@
 
 <body>
 
-<h2> Bem Vindo a área de Administração do Sistema </h2>
+
 
 

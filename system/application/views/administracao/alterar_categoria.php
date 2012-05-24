@@ -26,7 +26,7 @@
    echo form_textarea('descricao',$dados_categoria[0]->descricao);
    
    echo form_submit('mysubmit','Salvar');
-   echo form_submit('mysubmit','Cancelar');
+   echo form_reset('myreset','CANCELAR');
    
    echo form_fieldset_close();
    echo form_close();

@@ -1,6 +1,6 @@
 <?php
 
-	echo heading("Nada encontradp.",3);
+	echo heading("Nada encontrado.",3);
 	echo "Nenhum resultado encontrado com o termpo pesquisado".$termo.".";
 	echo br(2);
 	
