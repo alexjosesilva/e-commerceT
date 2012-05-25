@@ -1,7 +1,7 @@
 <?php
 
 /*
- * Controlador Carrinho
+ * ControladorCarrinho
  * Cap 11
  * Pag 144 e 145
  * Desc: os dados são enviados pelo formulario e adicionado a sessão do usuario
@@ -9,6 +9,7 @@
  *       responsavel pela maioria das ações do carrinho.
  * index Cap 11 e pag 145
  */
+
 class Carrinho extends Controller {
 	
 	
