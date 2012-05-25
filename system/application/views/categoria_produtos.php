@@ -3,7 +3,7 @@
 <?php
 echo "<div id='produtos-home'>";
 
-/*Primeiro testar se vem vazio a categoria*/
+/* Primeiro testar se vem vazio a categoria*/
 if($produtos_categoria==NULL) 
     echo "Sem produtos cadastrados com essa categoria";
 else{

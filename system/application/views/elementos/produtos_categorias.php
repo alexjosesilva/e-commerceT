@@ -3,7 +3,7 @@
 <?php
 
 /* *********************************
- * View do Produtos Categorias
+ *  View do Produtos Categorias
  *  Cap5 
  *  Pag 69 editado na pag 81
  */

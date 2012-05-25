@@ -1,5 +1,6 @@
 <?php
   
+  
   echo heading("Email encaminhado com sucesso!");
   echo "<p>Obrigado por ter entrado em contato conosco </p>";
   echo br(2);

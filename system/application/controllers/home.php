@@ -1,6 +1,6 @@
 <?php
 /**
- * Cap 5
+ *  Cap 5
  * Pag 68
  */
 class Home extends Controller {

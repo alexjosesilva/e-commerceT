@@ -1,7 +1,7 @@
 <?php
 
 /*
- * View detalhe do produto: aqui estão os detalhes dos produtos
+ *  View detalhe do produto: aqui estão os detalhes dos produtos
  * Cap: 5
  * Pag: 72 e 73
  * Adicionado código do carrinho de compras

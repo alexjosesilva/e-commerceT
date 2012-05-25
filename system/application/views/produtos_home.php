@@ -1,7 +1,7 @@
 <?php 
 	
 	/*
-     * View de produto home
+     *  View de produto home
      * Cap 5
      * Pag 70
      * 

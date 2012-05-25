@@ -8,7 +8,7 @@ class Produtos extends Controller{
      
 	}
 	/*
-     * Função para mostrar os detalhes dos produtos
+     *  Função para mostrar os detalhes dos produtos
      * Cap 5
      * pag 72
      */
