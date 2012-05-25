@@ -723,9 +723,10 @@ class CI_DB_active_record extends CI_DB_driver {
 			}
 			
 			// some platforms require an escape sequence definition for LIKE wildcards
+			/* Na linha 729 foi eliminado um letra a _chr afim de corrigir um bug no postgres */
 			if ($this->_like_escape_str != '')
 			{
-				$like_statement = $like_statement.sprintf($this->_like_escape_str, $this->_like_escape_char);
+				$like_statement = $like_statement.sprintf($this->_like_escape_str, $this->_like_escape_chr);
 			}
 			
 			$this->ar_like[] = $like_statement;

@@ -123,3 +123,44 @@ body{
 #form-contato form input[type=submit], #form-contato form input[type=reset]{
 	width: 100px;
 }
+
+
+/*
+* Formatação do carrinho
+* Cap 11
+* Pag 147 
+*/
+
+#carrinho table{
+	width: 545px;
+	padding: 10px;
+}
+
+#carrinho table tr th{
+	text-align:left;
+	color:#fff;
+	background-color:#666;
+	padding-bottom: 5px;
+	padding-top: 5px;
+}
+
+#carrinho table tr td{
+	width:25%;
+	border-bottom:#000 dotted 1px;
+}
+
+/*
+* Formatação linkcart
+* Cap 11
+* Pag 150
+*/
+
+.linkcart{
+	padding: 15px;
+	background-color: #efefef;
+	display: inline-block;
+}	
+
+
+
+

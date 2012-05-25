@@ -155,14 +155,13 @@ class Produtos extends Controller {
              * Emite erro quando alterar um produto sem foto  
 		     *************************************************  */
             if($this->upload->do_upload()){
-                $foto_antiga = $this->dados_produto($this->input->post('id'));
-				
-                if($foto_antiga!=null){	
-                	unlink('./imgs/'.$foto_antiga[0]->foto);
-                	$arquivo_enviado = $this->upload->data();
-                	$data['foto']=$arquivo_enviado['file_name'];
+
+            	 $foto_antiga = $this->dados_produto($this->input->post('id'));
+                 unlink('./imgs/'.$foto_antiga[0]->foto);
+                 $arquivo_enviado = $this->upload->data();
+                 $data['foto']=$arquivo_enviado['file_name'];
 				}
-            }
+            
             
         }
         
