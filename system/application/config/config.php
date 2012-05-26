@@ -11,7 +11,7 @@
 |	http://example.com/
 |
 */
-$config['base_url']	= "http://localhost/www/codeigniter/";
+$config['base_url']	= "http://localhost/www/aptana/codeigniter/";
 
 /*
 |--------------------------------------------------------------------------

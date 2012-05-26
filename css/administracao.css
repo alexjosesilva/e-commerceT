@@ -151,3 +151,33 @@ body{
 	width: auto;
 	display: inline;	
 }
+
+/* Lista de usuarios */
+
+#lista-usuarios{
+	width: 545px;
+	background-color: #ddd;
+	height:150px;
+	overflow-y:scroll;
+	padding: 20px;
+	padding-top: 3px;
+	margin-top: 14px;
+	margin-left: 255px;
+	border: #ccc inset 1px;
+}
+	
+#lista-usuarios a{
+	text-decoration: none;
+	color:#000;
+}
+
+
+#tipo-usuario input{
+	width: 100px;
+	margin: auto;
+	
+}
+
+#tipo-usuario input[type=radio]{
+	width: 10%;
+}
