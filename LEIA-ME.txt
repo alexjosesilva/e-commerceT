@@ -27,3 +27,4 @@ As imagens contidas no projeto podem estar sujeitas as leis de direitos autorais
 N�o as publique, n�o as redistribua.
 Para instalar o banco de dados, utilizar o Script database.sql contido no pacote.
 ***********************************************************************
+teste conexao -1
