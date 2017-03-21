@@ -1,8 +1,13 @@
 <?php
-/**
- *  Cap 5
- * Pag 68
- */
+ /*****************************************************************************************************
+ *  @name: Home
+ *  @author: Alex Jose
+ *  @version: 1.0
+ *  @package: Controller
+ *  @desc: Classe responsável por controlar o que é exibido na página principal do sistema
+ *  @since 03/21/2017 
+ *************************************************************************************************** */
+ 
 class Home extends Controller {
 
 	function __construct()
@@ -25,7 +30,7 @@ class Home extends Controller {
 
 		$config['base_url'] 	= base_url().'home/index/';
 		$config['total_rows']	= $this->db->count_all('produtos');
-		$config['per_page']		= '4';
+		$config['per_page']	= '4';
 		$config['first_link']	= 'Inicio';
 		$config['last_link']	= 'Fim';
 
