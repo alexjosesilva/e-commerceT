@@ -38,7 +38,7 @@
 $active_group = "default";
 $active_record = TRUE;
 
-$db['default']['hostname'] = "http://127.0.0.1";
+$db['default']['hostname'] = "127.0.0.1";
 $db['default']['port'] = "57128";
 $db['default']['username'] = "azure";
 $db['default']['password'] = "6#vWHD_$";
