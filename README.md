@@ -13,7 +13,7 @@ Neste projeto de Loja Vitual podemos cadastrar produtos,
 adiconar descrição com imagem. Podemos, t adicionar
 usuários respeitando uma determinada hierarquia.
 
-Site do projeto: http://alexjosesilva.github.com/Loja-Virtual/
+Site do projeto: http://lojavirtualcodeigniter1.azurewebsites.net/
 
 <p align="center">
   <img src="lojavirtual.png" width="350"/>
