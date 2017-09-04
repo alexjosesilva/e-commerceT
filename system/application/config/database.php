@@ -38,11 +38,11 @@
 $active_group = "default";
 $active_record = TRUE;
 
-$db['default']['hostname'] = "localhost";
-//$db['default']['port'] = "5433";
-$db['default']['username'] = "root";
-$db['default']['password'] = "";
-$db['default']['database'] = "catalogo";
+$db['default']['hostname'] = "http://127.0.0.1";
+$db['default']['port'] = "57128";
+$db['default']['username'] = "azure";
+$db['default']['password'] = "6#vWHD_$";
+$db['default']['database'] = "localdb";
 $db['default']['dbdriver'] = "mysql";
 $db['default']['dbprefix'] = "";
 $db['default']['pconnect'] = TRUE;
