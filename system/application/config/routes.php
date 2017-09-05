@@ -39,7 +39,7 @@
 | routes must come before any wildcard or regular expression routes.
 |
 */
-
+$route['contato'] = 'contato';
 $route['default_controller'] = "home";
 $route['scaffolding_trigger'] = "";
 
