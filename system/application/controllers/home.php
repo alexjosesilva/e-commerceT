@@ -28,7 +28,7 @@ class Home extends Controller {
 		$query = $this->db->get('produtos',4,$offset);
 		$dados['produtos']=$query->result();
 
-		$config['base_url'] 	= base_url().'home/index/';
+		$config['base_url'] 	= base_url().'home/';
 		$config['total_rows']	= $this->db->count_all('produtos');
 		$config['per_page']	= '4';
 		$config['first_link']	= 'Inicio';
