@@ -74,7 +74,7 @@ class Contato extends Controller {
 			
 			$this->email->send();
 			
-			$dados['titulo'] = 'Fale Conoscp';
+			$dados['titulo'] = 'Fale Conosco';
 			
 			$query = $this->db->get('categorias');
 			$dados['categorias'] = $query->result();
