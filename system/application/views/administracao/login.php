@@ -1,9 +1,10 @@
 
 <div id="form-login" >
-
+	<span> Login: admin </span><br>
+	<span> Senha: 123 </span><br>
 <?php
 /**
- * Formulário Login
+ * FormulÃ¡rio Login
  * Cap. 10
  * Pag. 137
  */
