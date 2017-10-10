@@ -29,6 +29,6 @@
 
 ?>
 	<span> Login: admin </span><br>
-	<span> Senha: 123 </span><br>
+	<span> Senha: 1234 </span><br>
 
 </div>
