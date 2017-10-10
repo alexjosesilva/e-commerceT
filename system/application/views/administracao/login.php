@@ -1,7 +1,6 @@
 
 <div id="form-login" >
-	<span> Login: admin </span><br>
-	<span> Senha: 123 </span><br>
+	
 <?php
 /**
  * Formulário Login
@@ -29,5 +28,7 @@
 	echo form_close();
 
 ?>
+	<span> Login: admin </span><br>
+	<span> Senha: 123 </span><br>
 
 </div>
